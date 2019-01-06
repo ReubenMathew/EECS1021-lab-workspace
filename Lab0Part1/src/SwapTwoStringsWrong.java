@@ -1,5 +1,5 @@
 
-public class SwapTwoStrings {
+public class SwapTwoStringsWrong {
 
 	public static void main(String[] args) {
 		String person1 = "Alan";
@@ -9,9 +9,8 @@ public class SwapTwoStrings {
 		System.out.print("person1 is " + person1+ " and ");
 		System.out.println("person2 is " +person2+".");
 		
-		String temp = person1;
 		person1 = person2;
-		person2 = temp;
+		person2 = person1;
 		
 		System.out.print("After the swap:");
 		System.out.print("person1 is " + person1+ " and ");
