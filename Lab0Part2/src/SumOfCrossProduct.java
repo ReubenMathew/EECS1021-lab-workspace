@@ -6,25 +6,40 @@ public class SumOfCrossProduct {
 		Scanner in = new Scanner(System.in);
 		
 		int nums[][] = new int[2][4];
-		int sum = 0;
-		for(int i = 0; i < 2; i++) {
-			System.out.println("Enter the 1st integer in sequence "+(i+1)+":");
-			nums[i][0] = in.nextInt();
-			System.out.println("Enter the 2nd integer in sequence "+(i+1)+":");
-			nums[i][1] = in.nextInt();
-			System.out.println("Enter the 3rd integer in sequence "+(i+1)+":");
-			nums[i][2] = in.nextInt();
-			System.out.println("Enter the 4th integer in sequence "+(i+1)+":");
-			nums[i][3] = in.nextInt();
-		}
 		
-		for(int i = 0; i < 4; i++) {
-			sum += nums[0][i]*nums[1][i];
-		}
+			System.out.println("Enter the 1st integer in sequence "+(1)+":");
+			nums[0][0] = in.nextInt();
+			System.out.println("Enter the 2nd integer in sequence "+(1)+":");
+			nums[0][1] = in.nextInt();
+			System.out.println("Enter the 3rd integer in sequence "+(1)+":");
+			nums[0][2] = in.nextInt();
+			System.out.println("Enter the 4th integer in sequence "+(1)+":");
+			nums[0][3] = in.nextInt();
+			System.out.println("Enter the 1st integer in sequence "+(2)+":");
+			nums[1][0] = in.nextInt();
+			System.out.println("Enter the 2nd integer in sequence "+(2)+":");
+			nums[1][1] = in.nextInt();
+			System.out.println("Enter the 3rd integer in sequence "+(2)+":");
+			nums[1][2] = in.nextInt();
+			System.out.println("Enter the 4th integer in sequence "+(2)+":");
+			nums[1][3] = in.nextInt();
+			
+		int sum = cross(nums,0);
 		
-		System.out.println("sum("+Arrays.toString(nums[0])+" * "+Arrays.toString(nums[1])+") = " +sum);
+		System.out.println("sum("+Arrays.toString(nums[0])+" * "+Arrays.toString(nums[1])+") = " + sum);
 		
 		in.close();
+	}
+	
+	public static int cross(int n[][], int m) {
+		int sum = 0;
+		if(m==4) {
+			return 0;
+		}else {
+		sum = n[0][m] * n[1][m] + cross(n,m+1);
+		return sum;
+		}
+		
 	}
 
 }

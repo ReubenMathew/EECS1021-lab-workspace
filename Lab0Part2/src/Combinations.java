@@ -28,13 +28,26 @@ public class Combinations {
 		
 		System.out.println("Here are all 16 possible combinations:");
 		
-		for(int i = 0; i < 4;i++) {
+		/*for(int i = 0; i < 4;i++) {
 			for(int j = 0; j < 4; j++) {
 				System.out.println("("+strings[i]+", "+ints[j]+")");
 			}
-		}
-		
+		}*/
+		p(strings,ints,0);
+			
 		in.close();
 	}
-
+	
+	public static void p(String[] foo, String[] bar, int n) {
+		
+		if(n==4){
+			return;
+		}else{
+			System.out.println("("+foo[n]+", "+bar[0]+")");
+			System.out.println("("+foo[n]+", "+bar[1]+")");
+			System.out.println("("+foo[n]+", "+bar[2]+")");
+			System.out.println("("+foo[n]+", "+bar[3]+")");
+			p(foo,bar,n+1);
+		}
+	}
 }
