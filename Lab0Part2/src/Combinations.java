@@ -27,19 +27,11 @@ public class Combinations {
 		ints[3] = in.nextLine();
 		
 		System.out.println("Here are all 16 possible combinations:");
-		
-		/*for(int i = 0; i < 4;i++) {
-			for(int j = 0; j < 4; j++) {
-				System.out.println("("+strings[i]+", "+ints[j]+")");
-			}
-		}*/
 		p(strings,ints,0);
-			
 		in.close();
 	}
 	
 	public static void p(String[] foo, String[] bar, int n) {
-		
 		if(n==4){
 			return;
 		}else{

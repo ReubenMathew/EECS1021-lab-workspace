@@ -21,6 +21,6 @@ public class ComputeAndInterpretBMI {
 			System.out.print("overweight!");
 		else if(bmi >= 30.0)
 			System.out.print("obese!");
+		in.close();
 	}
-
 }
