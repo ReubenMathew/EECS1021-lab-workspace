@@ -32,14 +32,13 @@ public class Combinations {
 	}
 	
 	public static void p(String[] foo, String[] bar, int n) {
-		if(n==4){
+		if(n==4)
 			return;
-		}else{
-			System.out.println("("+foo[n]+", "+bar[0]+")");
-			System.out.println("("+foo[n]+", "+bar[1]+")");
-			System.out.println("("+foo[n]+", "+bar[2]+")");
-			System.out.println("("+foo[n]+", "+bar[3]+")");
-			p(foo,bar,n+1);
-		}
+		System.out.println("("+foo[n]+", "+bar[0]+")");
+		System.out.println("("+foo[n]+", "+bar[1]+")");
+		System.out.println("("+foo[n]+", "+bar[2]+")");
+		System.out.println("("+foo[n]+", "+bar[3]+")");
+		p(foo,bar,n+1);
+		
 	}
 }
