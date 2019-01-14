@@ -1,6 +1,5 @@
 import java.util.*;
-public class GradeReport {
-	
+public class GradeReport {	
 	public static int quiz[] = new int[9];
 	public static int ass[] = new int[10];
 	public static int lab[] = new int [3];
