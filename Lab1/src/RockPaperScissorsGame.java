@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class RockPaperScissorsGame {
 
-
 	public static void main(String[] args) {
 		
 		int playerOne = 0; String oneName;
@@ -43,7 +42,7 @@ public class RockPaperScissorsGame {
 			System.out.println("Game over "+twoName+" wins!");return;
 		}else {
 			System.out.println("========\nRound "+3+":\n========");
-			System.out.println("What does "+oneName+" play? (R, P, or S)"); String one = in.nextLine();
+			System.out.println("What does "+oneName+	" play? (R, P, or S)"); String one = in.nextLine();
 			System.out.println("What does "+twoName+" play? (R, P, or S)");	String two = in.nextLine();
 		if((one.equals("R")&&two.equals("S"))||(one.equals("P")&&two.equals("R"))||(one.equals("S")&&two.equals("P"))) 
 			playerOne++;
@@ -58,7 +57,6 @@ public class RockPaperScissorsGame {
 		}else {
 			System.out.println("Game over: A tie between "+oneName+" and "+twoName);
 		}
-		
 		in.close();
 		
 	}
