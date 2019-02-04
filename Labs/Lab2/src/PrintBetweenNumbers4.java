@@ -27,18 +27,15 @@ public class PrintBetweenNumbers4 {
 			}in.nextLine();
 			while(true) {
 				System.out.println("Would you like to continue printing? (Y/N)");
-				
 				String ans = in.nextLine();
-				if((!ans.equals("Y"))&&(!ans.equals("N"))) {
+				if((!ans.equals("Y"))&&(!ans.equals("N"))) 
 					System.out.println("Invalid indication on continuation: "+ans);
-				}
 				if(ans.equals("N")) {
 					loop = false;
 					break;
 				}
 				if(ans.equals("Y"))
 					break;
-			}
 		}
 		System.out.println("Bye!");
 	}
