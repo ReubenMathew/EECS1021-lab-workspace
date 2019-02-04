@@ -36,6 +36,7 @@ public class PrintBetweenNumbers4 {
 				}
 				if(ans.equals("Y"))
 					break;
+			}
 		}
 		System.out.println("Bye!");
 	}
