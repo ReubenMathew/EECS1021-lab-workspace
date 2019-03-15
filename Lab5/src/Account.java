@@ -15,7 +15,7 @@ public class Account {
 		this.id = id;
 	}
 	public String getDescription() {
-		return (id=='i')?"International account with owner" +name+ "has current balance $"+balance:"Domestic account with owner" +name+ "has current balance $"+balance;
+		return (id=='i')?"International account with owner " +name+ " has current balance $"+balance:"Domestic account with owner " +name+ " has current balance $"+balance;
 	}
 	public double getBalance() {
 		return balance;
