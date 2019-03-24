@@ -4,7 +4,7 @@ public class Student {
 	
 	public String name;
 	public int count = 0;
-	public double gpa = -600;
+	public double gpa = 0;
 	boolean hasCourse = false;
 	public CourseRecord[] courses = new CourseRecord[100];
 	
@@ -26,7 +26,7 @@ public class Student {
 				num=num+0;
 			}
 		}
-		return (count ==0)?0:num/count;
+		return (count==0)?0:num/count;
 	}
 	public Student(String name) {
 		this.name = name;
